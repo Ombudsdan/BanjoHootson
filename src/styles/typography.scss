@@ -4,10 +4,15 @@
   --color-black: rgb(0,0,0);
   --color-brown: rgb(129, 63, 29);
   --color-white: rgb(225,225,225);
+  --color-blue: rgb(68, 105, 170);
+  --color-tan: rgb(192,175,160);
 
   --font-size-h1: 94px;
   --font-size-h2: 64px;
+  --font-size-h3: 54px;
+  --font-size-h4: 42px;
   --font-size-p: 23px;
+  --font-size-a: var(--font-size-p);
 
   --font-family-heading:  "Coiny", system-ui;
   --font-family-body: "Quicksand", sans-serif;
@@ -31,7 +36,33 @@ h2 {
   text-transform: uppercase;
 }
 
+h3 {
+  font-size: var(--font-size-h3);
+  font-family: var(--font-family-heading);
+  font-weight: 400;
+  font-style: normal;
+  white-space: pre-wrap;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+  font-family: var(--font-family-heading);
+  font-weight: 400;
+  font-style: normal;
+  white-space: pre-wrap;
+  text-transform: uppercase;
+}
+
 p {
+  font-size: var(--font-size-p);
+  font-family: var(--font-family-body);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+a {
   font-size: var(--font-size-p);
   font-family: var(--font-family-body);
   font-optical-sizing: auto;
