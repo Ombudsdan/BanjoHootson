@@ -11,6 +11,7 @@
   --font-size-h2: 64px;
   --font-size-h3: 54px;
   --font-size-h4: 42px;
+  --font-size-h5: 36px;
   --font-size-p: 23px;
   --font-size-a: var(--font-size-p);
 
@@ -54,12 +55,22 @@ h4 {
   text-transform: uppercase;
 }
 
+h5 {
+  font-size: var(--font-size-h5);
+  font-family: var(--font-family-heading);
+  font-weight: 400;
+  font-style: normal;
+  white-space: pre-wrap;
+  text-transform: uppercase;
+}
+
 p {
   font-size: var(--font-size-p);
   font-family: var(--font-family-body);
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  margin: unset;
 }
 
 a {

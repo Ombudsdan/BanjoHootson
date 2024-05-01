@@ -1,0 +1,34 @@
+nav {
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background: transparent;
+}
+
+.example-fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+ul {
+  display: flex;
+  gap: 2.5em;
+  margin: unset;
+
+  li {
+    list-style-type: none;
+
+    fa-icon {
+      font-size: 30px;
+    }
+  }
+}
+
+p.website {
+  font-size: var(--font-size-h5);
+  font-family: var(--font-family-heading);
+  color: var(--color-brown);
+  font-weight: 400;
+  font-style: normal;
+  white-space: pre-wrap;
+  text-transform: uppercase;
+}
