@@ -1,20 +1,20 @@
 /* tslint:disable:no-unused-variable */
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomeHeadingSectionComponent } from './home-heading-section.component';
+import { HomePageComponent } from './home-page.component';
 
-describe('H1Component', () => {
-  let component: HomeHeadingSectionComponent;
-  let fixture: ComponentFixture<HomeHeadingSectionComponent>;
+describe('HomeComponent', () => {
+  let component: HomePageComponent;
+  let fixture: ComponentFixture<HomePageComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [HomeHeadingSectionComponent],
+      declarations: [HomePageComponent],
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomeHeadingSectionComponent);
+    fixture = TestBed.createComponent(HomePageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

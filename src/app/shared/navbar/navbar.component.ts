@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SocialLinksComponent } from '../../components/social-links/social-links.component';
 
@@ -7,6 +8,6 @@ import { SocialLinksComponent } from '../../components/social-links/social-links
   standalone: true,
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
-  imports: [FontAwesomeModule, SocialLinksComponent],
+  imports: [RouterModule, FontAwesomeModule, SocialLinksComponent],
 })
 export class NavbarComponent {}

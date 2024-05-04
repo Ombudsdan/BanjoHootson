@@ -9,7 +9,7 @@ nav {
   flex: 1 1 auto;
 }
 
-p.website {
+a.website {
   font-size: var(--font-size-h5);
   font-family: var(--font-family-heading);
   color: var(--color-brown);
@@ -17,4 +17,5 @@ p.website {
   font-style: normal;
   white-space: pre-wrap;
   text-transform: uppercase;
+  text-decoration: unset;
 }

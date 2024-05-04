@@ -1,20 +1,20 @@
 /* tslint:disable:no-unused-variable */
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomeConnectSectionComponent } from './home-connect-section.component';
+import { HomePageConnectSectionComponent } from './home-page-connect-section.component';
 
-describe('HomeConnectSectionComponent', () => {
-  let component: HomeConnectSectionComponent;
-  let fixture: ComponentFixture<HomeConnectSectionComponent>;
+describe('HomePageConnectSectionComponent', () => {
+  let component: HomePageConnectSectionComponent;
+  let fixture: ComponentFixture<HomePageConnectSectionComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [HomeConnectSectionComponent],
+      declarations: [HomePageConnectSectionComponent],
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomeConnectSectionComponent);
+    fixture = TestBed.createComponent(HomePageConnectSectionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

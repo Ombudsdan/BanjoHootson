@@ -41,6 +41,7 @@
         "prettier"
       ],
       "rules": {
+        "linebreak-style": ["error", "unix"],
         "prettier/prettier": [
           "error",
           {
