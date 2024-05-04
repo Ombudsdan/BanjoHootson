@@ -2,7 +2,9 @@ div.container {
   padding: 2em 2em 3em 2em;
 }
 
-h2, h3, p {
+h2,
+h3,
+p {
   margin: 0;
 }
 
@@ -21,7 +23,8 @@ p.website {
   line-height: 96px;
 }
 
-p.location, p.contact {
+p.location,
+p.contact {
   font-size: var(--font-size-h4);
   font-family: var(--font-family-heading);
   color: var(--color-black);

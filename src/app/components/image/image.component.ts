@@ -5,9 +5,9 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './image.component.html',
-  styleUrl: './image.component.scss'
+  styleUrl: './image.component.scss',
 })
 export class ImageComponent {
-  @Input({required: true}) src!: string;
-  @Input() altText: string = "image";
+  @Input({ required: true }) src!: string;
+  @Input() altText: string = 'image';
 }

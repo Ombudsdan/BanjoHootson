@@ -9,9 +9,8 @@ describe('H1Component', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HomeHeadingSectionComponent ]
-    })
-    .compileComponents();
+      declarations: [HomeHeadingSectionComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

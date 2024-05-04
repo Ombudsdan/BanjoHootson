@@ -6,10 +6,12 @@ import { HomeConnectSectionComponent } from './components/connect-section/home-c
 @Component({
   standalone: true,
   selector: 'app-home',
-  imports: [HomeHeadingSectionComponent, HomeIntroductionSectionComponent, HomeConnectSectionComponent],
+  imports: [
+    HomeHeadingSectionComponent,
+    HomeIntroductionSectionComponent,
+    HomeConnectSectionComponent,
+  ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent {
-
-}
+export class HomeComponent {}

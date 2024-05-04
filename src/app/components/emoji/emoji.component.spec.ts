@@ -8,10 +8,9 @@ describe('EmojiComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [EmojiComponent]
-    })
-    .compileComponents();
-    
+      imports: [EmojiComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(EmojiComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
