@@ -9,20 +9,6 @@ nav {
   flex: 1 1 auto;
 }
 
-ul {
-  display: flex;
-  gap: 2.5em;
-  margin: unset;
-
-  li {
-    list-style-type: none;
-
-    fa-icon {
-      font-size: 30px;
-    }
-  }
-}
-
 p.website {
   font-size: var(--font-size-h5);
   font-family: var(--font-family-heading);
