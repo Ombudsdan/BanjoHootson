@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Coiny&family=Quicksand:wght@300..700&display=swap');
 
 :root {
-  --color-black: rgb(0,0,0);
+  --color-black: rgb(0, 0, 0);
   --color-brown: rgb(129, 63, 29);
-  --color-white: rgb(225,225,225);
+  --color-white: rgb(225, 225, 225);
   --color-blue: rgb(68, 105, 170);
-  --color-tan: rgb(192,175,160);
+  --color-tan: rgb(192, 175, 160);
 
   --font-size-h1: 94px;
   --font-size-h2: 64px;
@@ -15,8 +15,8 @@
   --font-size-p: 23px;
   --font-size-a: var(--font-size-p);
 
-  --font-family-heading:  "Coiny", system-ui;
-  --font-family-body: "Quicksand", sans-serif;
+  --font-family-heading: 'Coiny', system-ui;
+  --font-family-body: 'Quicksand', sans-serif;
 }
 
 h1 {

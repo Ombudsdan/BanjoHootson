@@ -9,9 +9,8 @@ describe('HomeConnectSectionComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HomeConnectSectionComponent ]
-    })
-    .compileComponents();
+      declarations: [HomeConnectSectionComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

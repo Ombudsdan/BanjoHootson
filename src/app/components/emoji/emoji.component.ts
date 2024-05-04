@@ -5,9 +5,9 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './emoji.component.html',
-  styleUrl: './emoji.component.scss'
+  styleUrl: './emoji.component.scss',
 })
 export class EmojiComponent {
-  @Input({required: true}) src!: string;
-  @Input() alt: string = "Emoji";
+  @Input({ required: true }) src!: string;
+  @Input() alt: string = 'Emoji';
 }

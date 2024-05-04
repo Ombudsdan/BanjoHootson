@@ -2,9 +2,9 @@
 // Variable overrides first
 $primary: #900;
 $enable-shadows: true;
-$prefix: "mo-";
+$prefix: 'mo-';
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import '../node_modules/bootstrap/scss/bootstrap';
 
-@import "./styles/flex-container.scss";
+@import './styles/flex-container.scss';
 @import './styles/typography.scss';
