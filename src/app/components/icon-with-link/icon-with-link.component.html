@@ -1,3 +1,4 @@
-<a [href]="href" [class]="size" target="_blank">
+<a [href]="linkWithText.href" [class]="size" target="_blank">
   <fa-icon [icon]="icon" />
+  <span *ngIf="showText">{{ linkWithText.text }}</span>
 </a>
