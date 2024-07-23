@@ -1,21 +1,84 @@
-nav {
-  align-items: center;
-  justify-content: center;
-  height: 80px;
-  background: transparent;
+/* Add a black background color to the top navigation */
+.navmenu {
+  background-color: var(--color-brown);
+  overflow: hidden;
 }
 
-.example-fill-remaining-space {
-  flex: 1 1 auto;
+/* Style the links inside the navigation bar */
+.navmenu a {
+  float: left;
+  display: block;
+  color: var(--color-white);
+  padding: 14px 16px;
+  line-height: 42px;
+  text-decoration: none;
+  font-family: var(--font-family-body);
 }
 
-a.website {
-  font-size: var(--font-size-h5);
+.navmenu a#title {
+  font-size: var(--font-size-h6);
   font-family: var(--font-family-heading);
-  color: var(--color-brown);
-  font-weight: 400;
-  font-style: normal;
-  white-space: pre-wrap;
-  text-transform: uppercase;
-  text-decoration: unset;
+}
+
+/* Change the color of links on hover */
+.navmenu a:hover {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.navmenu div.float-right {
+  float: right;
+  color: var(--color-white);
+}
+
+/* Hide the link that should open and close the navmenu on small screens */
+.navmenu .icon {
+  display: none;
+}
+
+span.social-links {
+  a#instagram-link:hover {
+    background-color: var(--color-instagram);
+  }
+  a#threads-link:hover {
+    background-color: var(--color-threads);
+  }
+  a#facebook-link:hover {
+    background-color: var(--color-facebook);
+  }
+  a#x-link:hover {
+    background-color: var(--color-x);
+  }
+  a span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  span.social-links a span {
+    display: inline-block;
+    margin-left: 0.5em;
+  }
+
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navmenu (.icon) */
+  .navmenu div.float-right {
+    display: none;
+  }
+  .navmenu a.icon {
+    float: right;
+    display: block;
+  }
+
+  /* The "responsive" class is added to the navmenu with JavaScript when the user clicks on the icon. This class makes the navmenu look good on small screens (display the links vertically instead of horizontally) */
+  .navmenu.responsive {position: relative;}
+  .navmenu.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navmenu.responsive a, .navmenu.navmenu.responsive div.float-right {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
