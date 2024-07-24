@@ -1,36 +1,23 @@
+// TODO - this needs a proper fix at some point. Very hacky.
 div.container {
   padding: 2em 2em 3em 2em;
 }
 
-h2,
-h3,
-p {
-  margin: 0;
-}
-
-p span {
+.line-through {
   text-decoration: line-through;
 }
 
-p.website {
-  font-size: var(--font-size-h2);
-  font-family: var(--font-family-heading);
-  color: var(--color-brown);
-  font-weight: 400;
-  font-style: normal;
+.text-heading-s {
   white-space: pre-wrap;
   text-transform: uppercase;
-  line-height: 96px;
+  margin: 0;
 }
 
-p.location,
-p.contact {
-  font-size: var(--font-size-h4);
-  font-family: var(--font-family-heading);
+.name {
+  color: var(--color-brown);
+}
+
+.location,
+.contact {
   color: var(--color-black);
-  font-weight: 400;
-  font-style: normal;
-  white-space: pre-wrap;
-  text-transform: uppercase;
-  line-height: 96px;
 }

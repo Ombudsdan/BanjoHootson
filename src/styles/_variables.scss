@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   --color-black: rgb(0, 0, 0);
@@ -7,6 +7,7 @@
   --color-light-grey: rgb(238, 237, 235);
   --color-tan: rgb(192, 175, 160);
   --color-white: rgb(225, 225, 225);
+  --color-green: rgb(16, 119, 45);
 
   // Social media colours
   --color-instagram: rgb(229, 39, 101);
@@ -14,15 +15,31 @@
   --color-facebook: rgb(60, 93, 159);
   --color-x: rgb(22, 27, 32);
 
-  --font-size-h1: 94px;
-  --font-size-h2: 64px;
-  --font-size-h3: 54px;
-  --font-size-h4: 42px;
-  --font-size-h5: 36px;
-  --font-size-h6: 28px;
-  --font-size-p: 23px;
-  --font-size-a: var(--font-size-p);
+  --font-size-84: 84px;
+  --font-size-72: 72px;
+  --font-size-60: 60px;
+  --font-size-48: 48px;
+  --font-size-36: 36px;
+  --font-size-24: 24px;
+  --font-size-18: 24px;
+  --font-size-14: 24px;
+  --font-size-12: 24px;
 
   --font-family-heading: 'Coiny', system-ui;
-  --font-family-body: 'Quicksand', sans-serif;
+  --font-family-body: 'Poppins', sans-serif;
+
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+
+  --breakpoint-xl: 1140px;
+  --breakpoint-l: 960px;
+  --breakpoint-m: 720px;
+  --breakpoint-s: 540px;
 }

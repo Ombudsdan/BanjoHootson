@@ -1,10 +1,11 @@
 <div class="navmenu" id="navmenu">
-  <a routerLink="" id="title">Banjo Hootson</a>
+  <a routerLink="" id="title" class="text-heading-xs">Banjo Hootson</a>
   <div class="float-right">
-    <a routerLink="About">About</a>
-    <a routerLink="Contact">Contact</a>
+    <a [routerLink]="['about']" class="text-heading-xxs">About</a>
+    <a [routerLink]="['contact']" class="text-heading-xxs">Contact</a>
     <span class="social-links">
       <a
+        class="text-heading-xxs"
         href="https://www.instagram.com/banjohootson/"
         target="_blank"
         id="instagram-link">
@@ -12,6 +13,7 @@
         <span>Instagram</span>
       </a>
       <a
+        class="text-heading-xxs"
         href="https://www.threads.net/@banjohootson"
         target="_blank"
         id="threads-link">
@@ -19,19 +21,27 @@
         <span>Threads</span>
       </a>
       <a
+        class="text-heading-xxs"
         href="https://www.facebook.com/banjohootson"
         target="_blank"
         id="facebook-link">
         <fa-icon [icon]="faFacebook" />
         <span>Facebook</span>
       </a>
-      <a href="https://x.com/banjohootson" target="_blank" id="x-link">
+      <a
+        class="text-heading-xxs"
+        href="https://x.com/banjohootson"
+        target="_blank"
+        id="x-link">
         <fa-icon [icon]="faX" />
         <span>X / Twitter</span>
       </a>
     </span>
   </div>
-  <a href="javascript:void(0);" class="icon" (click)="toggleResponsive()">
+  <a
+    href="javascript:void(0);"
+    class="text-heading-xxs icon"
+    (click)="toggleResponsive()">
     <fa-icon [icon]="faBars" />
   </a>
 </div>
