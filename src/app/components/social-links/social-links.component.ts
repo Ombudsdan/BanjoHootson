@@ -22,4 +22,5 @@ export class SocialLinksComponent {
   faXTwitter = faXTwitter;
 
   @Input() size?: Sizes;
+  @Input() colour: 'light' | 'dark' = 'dark';
 }

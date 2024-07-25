@@ -48,6 +48,19 @@ a {
   }
 }
 
+a.light {
+  color: var(--color-white);
+}
+
+a.dark {
+  color: var(--color-brown);
+}
+
 a:hover {
   color: var(--color-green);
 }
+
+a.light:hover {
+  color: var(--color-blue);
+}
+

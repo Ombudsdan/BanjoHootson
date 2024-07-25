@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AboutPageMeetMyFamilySectionComponent } from './about-page-meet-my-family-section.component';
+import { AboutPageMeetMyFamilySectionComponent } from './meet-my-family-section.component';
 
-describe('AboutPageMeetMyFamilyComponent', () => {
+describe('MeetMyFamilySectionComponent', () => {
   let component: AboutPageMeetMyFamilySectionComponent;
   let fixture: ComponentFixture<AboutPageMeetMyFamilySectionComponent>;
 

@@ -21,6 +21,7 @@ export class IconWithLinkComponent {
   @Input() icon!: IconDefinition;
   @Input() size?: Sizes = 'md';
   @Input() showText?: boolean;
+  @Input() colour: 'light' | 'dark' = 'dark';
 
   href?: string;
   text?: string;
