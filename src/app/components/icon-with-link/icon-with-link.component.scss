@@ -1,19 +1,66 @@
-.xs {
-  font-size: 16px;
-}
+.xl {
+  font-size: 60px;
 
-.md {
-  font-size: 24px;
-}
-
-.md {
-  font-size: 32px;
+  @media screen and (max-width: 720px) {
+    font-size: 48px;
+  }
 }
 
 .lg {
-  font-size: 44px;
+  font-size: 48px;
+
+  @media screen and (max-width: 720px) {
+    font-size: 36px;
+  }
 }
 
-.xl {
-  font-size: 58px;
+.md {
+  font-size: 36px;
+
+  @media screen and (max-width: 720px) {
+    font-size: 24px;
+  }
 }
+
+.sm {
+  font-size: 24px;
+  white-space: pre-wrap;
+
+  @media screen and (max-width: 720px) {
+    font-size: 18px;
+  }
+}
+
+.xs {
+  font-size: 20px;
+
+  @media screen and (max-width: 720px) {
+    font-size: 18px;
+  }
+}
+
+a {
+  text-decoration: unset;
+
+  span {
+    display: inline-block;
+    margin-left: 0.5em;
+  }
+}
+
+a.light {
+  color: var(--color-white);
+}
+
+a.dark {
+  color: var(--color-brown);
+}
+
+a:hover {
+  color: var(--color-green);
+}
+
+a.light:hover {
+  color: var(--color-blue);
+}
+

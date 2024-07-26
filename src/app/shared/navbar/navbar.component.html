@@ -1,8 +1,47 @@
-<nav class="flex-container">
-  <a [routerLink]="['']" class="website">Banjo Hootson </a>
-
-  <!-- This fills the remaining space of the current row -->
-  <span class="example-fill-remaining-space"></span>
-
-  <app-social-links size="md" />
-</nav>
+<div class="navmenu" id="navmenu">
+  <a routerLink="" id="title" class="text-heading-xs">Banjo Hootson</a>
+  <div class="float-right">
+    <a [routerLink]="['about']" class="text-heading-xxs">About</a>
+    <a [routerLink]="['contact']" class="text-heading-xxs">Contact</a>
+    <span class="social-links">
+      <a
+        class="text-heading-xxs"
+        href="https://www.instagram.com/banjohootson/"
+        target="_blank"
+        id="instagram-link">
+        <fa-icon [icon]="faInstagram" />
+        <span>Instagram</span>
+      </a>
+      <a
+        class="text-heading-xxs"
+        href="https://www.threads.net/@banjohootson"
+        target="_blank"
+        id="threads-link">
+        <fa-icon [icon]="faThreads" />
+        <span>Threads</span>
+      </a>
+      <a
+        class="text-heading-xxs"
+        href="https://www.facebook.com/banjohootson"
+        target="_blank"
+        id="facebook-link">
+        <fa-icon [icon]="faFacebook" />
+        <span>Facebook</span>
+      </a>
+      <a
+        class="text-heading-xxs"
+        href="https://x.com/banjohootson"
+        target="_blank"
+        id="x-link">
+        <fa-icon [icon]="faX" />
+        <span>X / Twitter</span>
+      </a>
+    </span>
+  </div>
+  <a
+    href="javascript:void(0);"
+    class="text-heading-xxs icon"
+    (click)="toggleResponsive()">
+    <fa-icon [icon]="faBars" />
+  </a>
+</div>

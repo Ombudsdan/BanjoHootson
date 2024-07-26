@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {
   faInstagram,
   faFacebook,
   faXTwitter,
   IconDefinition,
+  faThreads,
 } from '@fortawesome/free-brands-svg-icons';
 import { Sizes } from '../../helpers/types';
 
@@ -16,28 +17,39 @@ import { Sizes } from '../../helpers/types';
   templateUrl: './icon-with-link.component.html',
   styleUrl: './icon-with-link.component.scss',
 })
-export class IconWithLinkComponent implements OnInit {
+export class IconWithLinkComponent {
   @Input() icon!: IconDefinition;
   @Input() size?: Sizes = 'md';
+  @Input() showText?: boolean;
+  @Input() colour: 'light' | 'dark' = 'dark';
 
   href?: string;
+  text?: string;
 
-  ngOnInit(): void {
+  get linkWithText(): { href: string; text: string } {
     switch (this.icon) {
-      case faFacebook:
-        this.href = 'https://facebook.com/banjohootson';
-        break;
       case faInstagram:
-        this.href = 'https://instagram.com/banjohootson';
-        break;
+        return {
+          href: 'https://instagram.com/banjohootson',
+          text: 'Instagram',
+        };
+      case faThreads:
+        return {
+          href: 'https://www.threads.net/@banjohootson',
+          text: 'Threads',
+        };
+      case faFacebook:
+        return { href: 'https://facebook.com/banjohootson', text: 'Facebook' };
       case faXTwitter:
-        this.href = 'https://twitter.com/banjohootson';
-        break;
+        return {
+          href: 'https://twitter.com/banjohootson',
+          text: 'X / Twitter',
+        };
       default:
         console.error(
           'No valid icon provided for app-icon-with-link component.'
         );
-        break;
+        return { href: '', text: '' };
     }
   }
 }

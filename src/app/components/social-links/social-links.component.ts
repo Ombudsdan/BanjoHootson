@@ -4,6 +4,7 @@ import {
   faInstagram,
   faFacebook,
   faXTwitter,
+  faThreads,
 } from '@fortawesome/free-brands-svg-icons';
 import { Sizes } from '../../helpers/types';
 
@@ -16,8 +17,10 @@ import { Sizes } from '../../helpers/types';
 })
 export class SocialLinksComponent {
   faFacebook = faFacebook;
+  faThreads = faThreads;
   faInstagram = faInstagram;
   faXTwitter = faXTwitter;
 
   @Input() size?: Sizes;
+  @Input() colour: 'light' | 'dark' = 'dark';
 }

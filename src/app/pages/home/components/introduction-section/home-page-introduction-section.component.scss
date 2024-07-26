@@ -9,3 +9,14 @@ h2 {
 div.row {
   padding: 2em;
 }
+
+.col-md-3, .col-md-9 {
+  margin-bottom: 1em;
+}
+
+button {
+  background-color: var(--color-brown);
+}
+button:hover {
+  background-color: var(--color-green);
+}
