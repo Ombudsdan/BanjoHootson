@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { SocialLinksComponent } from '../../../../components/social-links/social-links.component';
 
 @Component({
-  selector: 'app-about-page-social-links-section',
+  selector: 'app-social-media-section',
   standalone: true,
   imports: [SocialLinksComponent],
-  templateUrl: './social-links-section.component.html',
-  styleUrl: './social-links-section.component.scss',
+  templateUrl: './social-media-section.component.html',
+  styleUrl: './social-media-section.component.scss',
 })
-export class AboutPageSocialLinksSectionComponent {}
+export class SocialLinksSectionComponent {}

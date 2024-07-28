@@ -3,12 +3,12 @@ import { Router } from '@angular/router';
 
 @Component({
   standalone: true,
-  selector: 'app-home-page-introduction-section',
-  templateUrl: './home-page-introduction-section.component.html',
-  styleUrls: ['./home-page-introduction-section.component.scss'],
+  selector: 'app-introduction-section',
+  templateUrl: './introduction-section.component.html',
+  styleUrls: ['./introduction-section.component.scss'],
   imports: [],
 })
-export class HomePageIntroductionSectionComponent {
+export class IntroductionSectionComponent {
   constructor(private router: Router) {}
 
   navigateToAboutPage = () => this.router.navigate(['about']);

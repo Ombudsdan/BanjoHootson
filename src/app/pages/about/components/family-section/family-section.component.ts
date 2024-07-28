@@ -2,13 +2,13 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-about-page-meet-my-family-section',
+  selector: 'app-family-section',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './meet-my-family-section.component.html',
-  styleUrl: './meet-my-family-section.component.scss',
+  templateUrl: './family-section.component.html',
+  styleUrl: './family-section.component.scss',
 })
-export class AboutPageMeetMyFamilySectionComponent {
+export class FamilySectionComponent {
   plushies: Plushie[] = [
     {
       name: 'Mandy',
