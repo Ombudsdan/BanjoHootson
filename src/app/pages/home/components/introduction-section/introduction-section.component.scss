@@ -15,9 +15,33 @@ div.row {
 }
 
 button {
+  align-self: flex-start;
   background-color: var(--color-black);
 }
 
 button:hover {
   background-color: var(--color-blue);
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+@media screen and (max-width: 720px) {
+  .flexbox {
+    align-items: center;
+
+    p {
+      margin-top: 1em;
+      align-self: center;
+      text-align: center;
+    }
+
+    button {
+      align-self: center;
+    }
+  }
 }
