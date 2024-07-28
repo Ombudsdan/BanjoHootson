@@ -5,8 +5,10 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './contact-page.component.html',
-  styleUrl: './contact-page.component.scss'
+  styleUrl: './contact-page.component.scss',
 })
 export class ContactPageComponent {
-
+  sendEmail() {
+    location.href = 'mailto:hello@banjohootson.com';
+  }
 }
