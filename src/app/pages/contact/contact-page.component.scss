@@ -10,3 +10,11 @@
 h1 {
   text-transform: uppercase;
 }
+
+button {
+  background-color: var(--color-black);
+}
+
+button:hover {
+  background-color: var(--color-blue);
+}

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { AboutPageWelcomeSectionComponent } from './components/welcome-section/welcome-section.component';
-import { AboutPageMeetMyFamilySectionComponent } from './components/meet-my-family-section/meet-my-family-section.component';
-import { AboutPageSocialLinksSectionComponent } from './components/social-links-section/social-links-section.component';
+import { WelcomeSectionComponent } from './components/welcome-section/welcome-section.component';
+import { SocialLinksSectionComponent } from './components/social-media-section/social-media-section.component';
+import { FamilySectionComponent } from './components/family-section/family-section.component';
 
 @Component({
   selector: 'app-about-page',
@@ -9,9 +9,9 @@ import { AboutPageSocialLinksSectionComponent } from './components/social-links-
   templateUrl: './about-page.component.html',
   styleUrl: './about-page.component.scss',
   imports: [
-    AboutPageWelcomeSectionComponent,
-    AboutPageMeetMyFamilySectionComponent,
-    AboutPageSocialLinksSectionComponent,
+    WelcomeSectionComponent,
+    FamilySectionComponent,
+    SocialLinksSectionComponent,
   ],
 })
 export class AboutPageComponent {}

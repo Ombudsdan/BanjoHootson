@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WelcomeSectionComponent } from './welcome-section.component';
+import { FamilySectionComponent } from './family-section.component';
 
-describe('WelcomeSectionComponent', () => {
-  let component: WelcomeSectionComponent;
-  let fixture: ComponentFixture<WelcomeSectionComponent>;
+describe('MeetMyFamilySectionComponent', () => {
+  let component: FamilySectionComponent;
+  let fixture: ComponentFixture<FamilySectionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [WelcomeSectionComponent],
+      imports: [FamilySectionComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(WelcomeSectionComponent);
+    fixture = TestBed.createComponent(FamilySectionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
