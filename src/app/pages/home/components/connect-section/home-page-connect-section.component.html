@@ -5,17 +5,12 @@
         CONNECT WITH ME AND LET'S EXPLORE THE PLUSHIE WORLD TOGETHER!
       </p>
     </div>
-    <div class="col-sm-3">
-      <app-image src="home-connect-section-1.jpg" />
-    </div>
-    <div class="col-sm-3">
-      <app-image src="home-connect-section-2.jpg" />
-    </div>
-    <div class="col-sm-3">
-      <app-image src="home-connect-section-3.jpg" />
-    </div>
-    <div class="col-sm-3">
-      <app-image src="home-connect-section-4.jpg" />
+    <div class="col-sm-3" *ngFor="let imageNo of [1, 2, 3, 4]">
+      <img
+        src="../../../../../assets/images/home-page/connect-section/image-{{
+          imageNo
+        }}.jpg"
+        style="width: 100%" />
     </div>
   </div>
 </div>

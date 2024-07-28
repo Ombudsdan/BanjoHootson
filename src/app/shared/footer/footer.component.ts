@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ImageComponent } from '../../components/image/image.component';
 import { EmojiComponent } from '../../components/emoji/emoji.component';
 
 @Component({
@@ -7,6 +6,6 @@ import { EmojiComponent } from '../../components/emoji/emoji.component';
   standalone: true,
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss',
-  imports: [ImageComponent, EmojiComponent],
+  imports: [EmojiComponent],
 })
 export class FooterComponent {}

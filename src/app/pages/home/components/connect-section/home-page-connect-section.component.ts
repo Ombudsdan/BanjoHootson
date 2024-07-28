@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ImageComponent } from '../../../../components/image/image.component';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -7,6 +6,6 @@ import { CommonModule } from '@angular/common';
   selector: 'app-home-page-connect-section',
   templateUrl: './home-page-connect-section.component.html',
   styleUrls: ['./home-page-connect-section.component.scss'],
-  imports: [CommonModule, ImageComponent],
+  imports: [CommonModule],
 })
 export class HomePageConnectSectionComponent {}
