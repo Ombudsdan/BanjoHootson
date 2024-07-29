@@ -1,5 +1,57 @@
-<app-welcome-section />
+<div class="main-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-8">
+        <div class="main-section--text-content">
+          <h1>All about Banjo</h1>
+          <p>
+            Join me in my plushie adventures as we explore the world together.
+            Let's embark on new journeys and create memories that will last a
+            lifetime! Travel is not just about the places we go; it's about the
+            moments we experience and the stories we share. Come along and be a
+            part of my plushie travel story.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="main-section--image-content">
+          <img
+            src="../../../assets/images/about-page/welcome-section/banjo.jpg"
+            class="circle" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<app-family-section />
+<div class="family-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="center-align">Meet my family</h2>
+      </div>
+      <ng-container *ngFor="let plushie of plushies">
+        <div class="col-sm-6 col-lg-4">
+          <app-plushie-bio [plushie]="plushie" />
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>
 
-<app-social-media-section />
+<div class="social-media-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="social-media-section--content">
+          <h2>Let's begin the adventure!</h2>
+          <p>
+            Check out my social media links below, drop me a follow and we can
+            be friends!
+          </p>
+          <app-social-links size="xl" colour="light" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

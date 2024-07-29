@@ -22,3 +22,9 @@ div.container {
 .contact {
   color: var(--color-black);
 }
+
+@media screen and (max-width: 1140px) {
+  .col-xl-6 {
+    text-align: center;
+  }
+}

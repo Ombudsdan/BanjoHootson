@@ -1,17 +1,16 @@
 import { Component } from '@angular/core';
-import { WelcomeSectionComponent } from './components/welcome-section/welcome-section.component';
-import { SocialLinksSectionComponent } from './components/social-media-section/social-media-section.component';
-import { FamilySectionComponent } from './components/family-section/family-section.component';
+import { CommonModule } from '@angular/common';
+import { PlushieBioComponent } from '../../components/plushie-bio/plushie-bio.component';
+import { SocialLinksComponent } from '../../components/social-links/social-links.component';
+import { AllPlushies } from '../../shared/content/plushies';
 
 @Component({
   selector: 'app-about-page',
   standalone: true,
   templateUrl: './about-page.component.html',
   styleUrl: './about-page.component.scss',
-  imports: [
-    WelcomeSectionComponent,
-    FamilySectionComponent,
-    SocialLinksSectionComponent,
-  ],
+  imports: [CommonModule, PlushieBioComponent, SocialLinksComponent],
 })
-export class AboutPageComponent {}
+export class AboutPageComponent {
+  plushies = AllPlushies;
+}
