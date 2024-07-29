@@ -28,4 +28,11 @@ export const Morris: Plushie = {
   imgFileName: 'morris.jpg',
 };
 
-export const AllPlushies = [Mandy, Djungel, BigMonkey, Morris];
+export const Duoringo: Plushie = {
+  name: 'Duoringo',
+  bio: `Duoringo is a Kösen polar bear. He spends most of his time impersonating other polar bears. Quite frankly, he's a menace.`,
+  birthday: 'He was adopted on 10th January 2024 but his birthday is unknown.',
+  imgFileName: 'duoringo.jpg',
+};
+
+export const AllPlushies = [Mandy, Djungel, BigMonkey, Morris, Duoringo];
