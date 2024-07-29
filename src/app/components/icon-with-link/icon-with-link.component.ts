@@ -8,7 +8,7 @@ import {
   IconDefinition,
   faThreads,
 } from '@fortawesome/free-brands-svg-icons';
-import { Sizes } from '../../helpers/types';
+import Sizes from '../../shared/types/sizes';
 
 @Component({
   selector: 'app-icon-with-link',

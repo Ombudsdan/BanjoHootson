@@ -10,3 +10,31 @@
 h1 {
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 960px) {
+  .img-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+  }
+
+  img {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .flexbox {
+    align-items: center;
+    text-align: center;
+  }
+
+  h1, p {
+    align-self: center;
+  }
+
+  img {
+    width: 75%;
+  }
+}

@@ -4,11 +4,26 @@
   flex-direction: column;
 }
 
-.center-align {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 h2 {
   margin-bottom: 0.75em;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 0.25em;
+}
+
+
+img {
+  width: 75%;
+}
+
+.flexbox {
+  align-items: center;
+  margin-bottom: 3em;
+  text-align: center;
+
+  h3, img, p {
+    align-self: center;
+  }
 }

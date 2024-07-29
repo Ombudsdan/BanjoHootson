@@ -3,19 +3,19 @@
   <div class="container">
     <div class="row">
       <ng-container *ngFor="let plushie of plushies">
-        <div class="col-sm-4">
-          <img
-            src="../../../../../assets/images/about-page/family-section/{{
-              plushie.imgFileName
-            }}"
-            class="circle" />
-          <div style="display: flex">
-            <h3 style="margin: 0.3em auto">
+        <div class="col-sm-6 col-lg-4">
+          <div class="flexbox">
+            <img
+              src="../../../../../assets/images/about-page/family-section/{{
+                plushie.imgFileName
+              }}"
+              class="circle" />
+            <h3>
               {{ plushie.name }}
             </h3>
+            <p>{{ plushie.bio }}</p>
+            <p>{{ plushie.birthday }}</p>
           </div>
-          <p>{{ plushie.bio }}</p>
-          <p>{{ plushie.birthday }}</p>
         </div>
       </ng-container>
     </div>
