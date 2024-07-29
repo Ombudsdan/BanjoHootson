@@ -2,7 +2,7 @@ import Plushie from '../interfaces/plushie';
 
 export const BigMonkey: Plushie = {
   name: 'Big Monkey',
-  bio: 'Known as “Big Monk” to his friends. He is a Premier Toys chimpanzee. He is distant cousin and the oldest in the family.',
+  bio: 'Known as “Big Monk” to his friends. He is a Premier Toys chimpanzee. He is a distant cousin and the oldest in the family.',
   birthday: 'His birthday is 14th September and was born in 2016.',
   imgFileName: 'big-monkey.jpg',
 };
@@ -35,4 +35,18 @@ export const Duoringo: Plushie = {
   imgFileName: 'duoringo.jpg',
 };
 
-export const AllPlushies = [Mandy, Djungel, BigMonkey, Morris, Duoringo];
+export const Gordon: Plushie = {
+  name: 'Gordon',
+  bio: `Gordon is a Premier Toys orangutan. He is best friends with Big Monkey and spends most of his time in bed with his baby, Gordon.`,
+  birthday: 'His birthday is 14th August and was born in 2017.',
+  imgFileName: 'gordon.jpg',
+};
+
+export const AllPlushies = [
+  Mandy,
+  Djungel,
+  BigMonkey,
+  Gordon,
+  Morris,
+  Duoringo,
+];
