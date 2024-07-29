@@ -10,11 +10,6 @@
   opacity: 75%;
   height: 80vh;
 
-  @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-
   @media screen and (max-width: 1140px) {
     height: 50vh;
   }
@@ -64,6 +59,20 @@
   height: 100%;
 }
 
+.connect-section {
+  background-color: rgb(239, 237, 235);
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 960px) {
+  .connect-section .col-6 {
+    margin-bottom: 1em;
+  }
+}
+
 @media screen and (max-width: 720px) {
   .introduction-section--image-content, .introduction-section--text-content {
     align-items: center;
@@ -76,19 +85,5 @@
 
   .introduction-section--text-content button {
     align-self: center;
-  }
-}
-
-.connect-section {
-  background-color: rgb(239, 237, 235);
-  padding-top: 2em;
-  padding-bottom: 2em;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-@media screen and (max-width: 960px) {
-  .connect-section .col-6 {
-    margin-bottom: 1em;
   }
 }

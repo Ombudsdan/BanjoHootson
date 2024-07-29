@@ -1,27 +1,24 @@
-.page-wrapper {
+.main-section {
   background-color: rgb(239, 237, 235);
-}
-
-.container {
   padding-top: 2em;
   padding-bottom: 2em;
 }
 
-h1 {
+.main-section h1 {
   text-transform: uppercase;
 }
 
-button {
+.main-section button {
   background-color: var(--color-black);
 }
 
-button:hover {
+.main-section button:hover {
   background-color: var(--color-blue);
 }
 
 
 @media screen and (max-width: 960px) {
-  .img-container {
+  .main-section--image-content {
     display: flex;
     align-items: center;
     height: 100%;
@@ -34,7 +31,7 @@ button:hover {
 }
 
 @media screen and (max-width: 720px) {
-  .flexbox {
+  .main-section--text-content {
     align-items: center;
     text-align: center;
     margin-bottom: 2em;

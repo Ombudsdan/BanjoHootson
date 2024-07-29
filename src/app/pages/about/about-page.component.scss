@@ -8,25 +8,6 @@
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 960px) {
-  .main-section--text-content, .main-section--image-content {
-    align-items: center;
-    text-align: center;
-  }
-
-  .main-section--image-content {
-    display: flex;
-    justify-content: center;
-    height: 100%;
-  }
-}
-
-@media screen and (max-width: 720px) {
-  .main-section--image-content img {
-    width: 75%;
-  }
-}
-
 .family-section {
   margin: 3em 0;
   display: flex;
@@ -53,4 +34,23 @@
 .social-media-section h2, .social-media-section p {
   align-self: center;
   text-align: center;
- }
+}
+
+@media screen and (max-width: 960px) {
+  .main-section--text-content, .main-section--image-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .main-section--image-content {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .main-section--image-content img {
+    width: 75%;
+  }
+}
