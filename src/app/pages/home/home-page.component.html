@@ -1,7 +1,56 @@
-<app-jumbotron-section />
+<div class="main-section">
+  <img
+    src="../../../../../assets/images/home-page/heading-section/banjo-and-mandy.jpg"
+    alt="image" />
+  <h1>
+    <span class="text-caption-m"><span>The adventures of</span></span>
+    <span class="text-heading-l"><span>Banjo Hootson</span></span>
+    <span class="text-caption-m"><span>Plushie Influencer</span></span>
+  </h1>
+</div>
 
 <app-social-links size="xl" />
 
-<app-introduction-section />
+<div class="introduction-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-lg-3">
+        <div class="introduction-section--image-content">
+          <img
+            src="../../../../assets/images/home-page/introduction-section/banjo.jpg"
+            class="circle" />
+        </div>
+      </div>
+      <div class="col-md-8 col-lg-9">
+        <div class="introduction-section--text-content">
+          <p>
+            I'm Banjo, a plushie creator from Yorkshire in the United Kingdom.
+            Join me as I spend cosy times at home with my plushie pals, explore
+            lovely towns and cities across the UK and even jet set around the
+            world for fun new experiences!
+          </p>
+          <button (click)="navigateToAboutPage()">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<app-connect-section />
+<div class="connect-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="text-heading-m">
+          Connect with me and let's explore the plushie world together!
+        </p>
+      </div>
+      <div class="col-6 col-sm-3" *ngFor="let imageNo of [1, 2, 3, 4]">
+        <img
+          src="../../../../assets/images/home-page/connect-section/image-{{
+            imageNo
+          }}.jpg"
+          class="rounded-square" />
+      </div>
+    </div>
+  </div>
+</div>
