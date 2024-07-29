@@ -1,5 +1,3 @@
-import Plushie from '../interfaces/plushie';
-
 export const BigMonkey: Plushie = {
   name: 'Big Monkey',
   bio: 'Known as “Big Monk” to his friends. He is a Premier Toys chimpanzee. He is a distant cousin and the oldest in the family.',
@@ -50,3 +48,10 @@ export const AllPlushies = [
   Morris,
   Duoringo,
 ];
+
+export interface Plushie {
+  name: string;
+  bio: string;
+  birthday: string;
+  imgFileName: string;
+}

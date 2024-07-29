@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import Plushie from '../../shared/interfaces/plushie';
+import { Plushie } from '../../shared/content/plushies';
 
 @Component({
   selector: 'app-plushie-bio',
