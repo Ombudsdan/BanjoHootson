@@ -21,4 +21,11 @@ export const Mandy: Plushie = {
   imgFileName: 'mandy.jpg',
 };
 
-export const AllPlushies = [Mandy, Djungel, BigMonkey];
+export const Morris: Plushie = {
+  name: 'Morris',
+  bio: `Morris is a Jellycat "Olaf" Orangutan. He's best friends with Mandy, often finding himself looking after her cat when she's traveling!`,
+  birthday: 'He was adopted on 17th July 2024 but his birthday is unknown.',
+  imgFileName: 'morris.jpg',
+};
+
+export const AllPlushies = [Mandy, Djungel, BigMonkey, Morris];
